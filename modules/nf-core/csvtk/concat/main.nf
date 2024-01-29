@@ -40,6 +40,7 @@ process CSVTK_CONCAT {
         ${delimiter}  \\
         ${out_delimiter} \\
         --out-file ${prefix}.${out_extension} \\
+        -H \\
         $csv
 
     cat <<-END_VERSIONS > versions.yml
